@@ -1,0 +1,18 @@
+<form [formGroup]='formGroup' (ngSubmit)="onSignUp()">
+  <mat-form-field class="input-field">
+    <input matInput formControlName="email" placeholder="E-mail" type="email">
+    <hint-validation [dynamicFormControl]="formGroup.controls.email"></hint-validation>
+  </mat-form-field>
+  
+  <mat-form-field class="input-field">
+    <input matInput formControlName="cpf" placeholder="CPF" type="text">
+    <hint-validation [dynamicFormControl]="formGroup.controls.cpf"></hint-validation>
+  </mat-form-field>
+
+  <mat-form-field class="input-field">
+    <input matInput formControlName="password" placeholder="Password" type="password">
+    <hint-validation [dynamicFormControl]="formGroup.controls.password"></hint-validation>
+  </mat-form-field>
+
+  <button mat-raised-button class="input-field btn-login" type="submit" [disabled]="!formGroup.valid">Cadastrar</button>
+</form>

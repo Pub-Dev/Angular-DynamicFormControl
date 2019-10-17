@@ -1,0 +1,33 @@
+.container{
+    padding: 40px 20px;
+}
+
+.background{
+    background-image: linear-gradient(45deg, #47da99, #43ccda);
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    &:before{
+        content: '';
+        background-color: white;
+        transform: rotateZ(20deg) skew(22deg, 0deg);
+        width: 115vw;
+        height: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        position: fixed;
+        bottom: -50vh;
+        left: -10vw;
+        opacity: 0.2;
+    }
+}
+
+.mat-tab-header{
+    position: fixed;
+    top: 0;
+    right: 0;
+}

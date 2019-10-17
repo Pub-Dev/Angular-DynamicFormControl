@@ -1,0 +1,10 @@
+<form>
+  <mat-form-field class="input-field">
+    <input matInput placeholder="Login" type="text" [(ngModel)]="login" name="login">
+  </mat-form-field>
+  <mat-form-field class="input-field">
+    <input matInput placeholder="Password" type="password" [(ngModel)]="password" name="password">
+  </mat-form-field>
+  <a href="#">Esqueci minha senha</a>
+  <button type="button" mat-raised-button class="input-field btn-login" (click)='onLogIn()'>Entrar</button>
+</form>
